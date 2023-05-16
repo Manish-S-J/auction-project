@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Auction.css">
+</head>
+
+<body>
+        <h1>
+            <marquee>MSJ AUCTION</marquee>
+        </h1>
+        <div id="index">
+            <button onclick="indreg()"><b>REGISTER</b></button></a><br>
+            <h2>OR</h2>
+            <button onclick="indlog()"><b>LOGIN</b></button></a><br><br>
+        </div>
+
+        <div id="register" style="display: none;">
+            <h1>REGISTER</h1>
+            <form id="regForm">
+                <label><b>USERNAME :</b></label><input type="text" id="name" placeholder="eg.Manish">
+                <div id="n1"></div><br><br>
+                <label><b>EMAIL :</b></label><input type="email" id="mail" placeholder="eg.manish6@gmail.com">
+                <div id="n2"></div><br><br>
+                <label><b>PHONE NO :</b></label><input type="number" id="no" placeholder="eg.***** *****">
+                <div id="n5"></div><br><br>
+                <label><b>PASSWORD :</b></label><input type="password" id="psw" placeholder="enter your password">
+                <div id="n3"></div><br><br>
+                <label><b>RE-ENTER PASSWORD :</b></label><input type="password" id="new1"
+                    placeholder="re-enter your password">
+                <div id="n4"></div><br><br>
+            </form>
+            <button onclick="register()">Register</button>
+        </div>
+
+        <div id="login" style="display: none;">
+            <h1>LOGIN</h1>
+            <form id="loginForm">
+                <label>USERNAME</label><br><br>
+                <input type="text" id="name1" placeholder="eg.Manish">
+                <div id="n6"></div><br><br>
+                <label>PASSWORD</label><br><br>
+                <input type="password" id="psw1" placeholder="enter your password"><br><br>
+            </form>
+            <button onclick="valuate()">Login</button>
+        </div>
+
+        <div id="addbut" style="display: none;">
+            <button onclick="addbut()">Add New</button><br><br>
+        </div>
+
+        <div id="add" style="display: none;">
+            <h2>Add New Product</h2>
+            <form id="addform">
+            <label>Product Name :</label><input type="text" id="product"><br><br>
+            <label>Image :</label><input type="file" id="img" onchange="loadFile(event)"><br><br>
+            <p><img id="output" width="200px"> </p>
+            <label>Description : </label><input type="text" id="des"><br><br>
+            <label>Price : </label><input type="number" id="price"><br><br>
+            <label>Minimum Price : </label><input type="number" id="minimum"><br><br>
+        </form>
+            <button onclick="add()">Add</button>
+        </div>
+
+        <div id="st1" style="display: none;">
+            <button onclick="status()">Bidding Status</button><br><br>
+            <table border="1" id="table" style="display: none;">
+                <tr>
+                    <th>user</th>
+                    <th>Product</th>
+                    <th>Bidding Amount</th>
+                </tr>
+            </table>
+        </div>
+        <div id="home" style="display: none;">
+            
+        </div>
+
+        <div id="logout" style="display: none;">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </body>
+    <script src=" Auction.js"></script>
+
+</html>

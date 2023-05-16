@@ -1,0 +1,40 @@
+body{
+    background-image: url('online-auction.png');
+}
+#index{
+    text-align: center;
+}
+#index button{
+    height: 80px;
+    width: 150px;
+    font-size: 25px;
+}
+#register{
+    text-align: center;
+    border:3px solid black;
+    padding: 30px;
+    margin-top: 80px;
+    margin-left: 400px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(206, 206, 255);
+}
+#login{
+    text-align: center;
+    border:3px solid black;
+    padding: 30px;
+    margin-top: 80px;
+    margin-left: 400px; 
+    height: 250px;
+    width: 300px;
+    background-color: rgb(206, 206, 255)
+}
+table{
+    background-color: rgb(206, 206, 247);
+}
+#logout{
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    font-size: 18px;
+}
